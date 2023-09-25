@@ -973,7 +973,7 @@ def main():
     root = tk.Tk()
     root.title("COCO Viewer")
     # Set the window icon
-    icon_path = os.path.dirname(os.readlink(__file__))+'/coco_viewer.png'
+    icon_path = os.getcwd()+'/coco_viewer.png'
     root.iconphoto(True, tk.PhotoImage(file=icon_path))
     if not args.images or not args.annotations:
         root.geometry("300x150")  # app size when no data is provided
